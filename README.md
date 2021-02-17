@@ -8,8 +8,8 @@ A desktop app that keeps track of what you've copied
 * [x] Hide / Show window when tray icon is clicked
 * [x] Hide window chrome
 * [x] Reposition tray icon by window when shown
-* [ ] Install Bulma and Vue
-* [ ] Create Vue instance in renderer.js
+* [x] Install Bulma and Vue
+* [x] Create Vue instance in renderer.js
 * [ ] Set interval to check if something was added to the clipboard
 * [ ] Store the text of the clipboard in history array
     * [ ] Show Notification
