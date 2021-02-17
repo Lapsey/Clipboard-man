@@ -5,7 +5,7 @@ A desktop app that keeps track of what you've copied
 ## TODO
 * [x] Setup basic Electron app
 * [x] Create tray icon
-* [ ] Hide / Show window when tray icon is clicked
+* [x] Hide / Show window when tray icon is clicked
 * [ ] Hide window chrome
 * [ ] Reposition tray icon by window when shown
 * [ ] Install Bulma and Vue

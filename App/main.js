@@ -11,11 +11,16 @@ function createWindow () {
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     } 
-  })
+  });
+  mainWindow.hide();
+  tray = new Tray('./icon/notepad.png');
+
+  tray.on('click', () => {
+    mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show();
+  });
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
-  tray = new Tray('./icon/notepad.png');
 }
 
 // This method will be called when Electron has finished
