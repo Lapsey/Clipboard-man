@@ -6,8 +6,8 @@ A desktop app that keeps track of what you've copied
 * [x] Setup basic Electron app
 * [x] Create tray icon
 * [x] Hide / Show window when tray icon is clicked
-* [ ] Hide window chrome
-* [ ] Reposition tray icon by window when shown
+* [x] Hide window chrome
+* [x] Reposition tray icon by window when shown
 * [ ] Install Bulma and Vue
 * [ ] Create Vue instance in renderer.js
 * [ ] Set interval to check if something was added to the clipboard

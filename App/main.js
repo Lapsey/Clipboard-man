@@ -6,8 +6,9 @@ let tray = null;
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
+    width: 400,
     height: 600,
+    frame: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     } 
@@ -18,6 +19,12 @@ function createWindow () {
   tray.on('click', () => {
     mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show();
   });
+
+  mainWindow.on('show', () => {
+    const trayBounds = tray.getBounds();
+    const windowBounds = mainWindow.getBounds();
+    mainWindow.setPosition(trayBounds.x - (windowBounds.width / 2), trayBounds.y - windowBounds.height);
+  })
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
